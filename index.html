@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Market Education Hub</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6fb;
+padding:40px;
+display:flex;
+justify-content:center;
+}
+
+/* MAIN LAYOUT */
+
+.container{
+max-width:1200px;
+width:100%;
+display:flex;
+gap:40px;
+align-items:flex-start;
+}
+
+/* CARD */
+
+.card{
+max-width:520px;
+width:100%;
+background:white;
+border-radius:20px;
+padding:35px 30px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+.profile{
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1{
+font-size:28px;
+margin-bottom:12px;
+color:#1b1b1b;
+}
+
+.subtitle{
+color:#555;
+font-size:16px;
+line-height:1.5;
+margin-bottom:20px;
+}
+
+.features{
+text-align:left;
+margin-top:15px;
+margin-bottom:25px;
+}
+
+.features p{
+margin:10px 0;
+font-size:15px;
+color:#333;
+}
+
+.check{
+color:#2ecc71;
+font-weight:bold;
+margin-right:6px;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:18px;
+border:none;
+border-radius:50px;
+font-size:18px;
+color:white;
+cursor:pointer;
+background:linear-gradient(90deg,#25D366,#20c45a);
+transition:all .3s ease;
+box-shadow:0 8px 18px rgba(37,211,102,0.35);
+position:relative;
+overflow:hidden;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 30px rgba(37,211,102,0.45);
+}
+
+.btn::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent);
+transition:.5s;
+}
+
+.btn:hover::before{
+left:100%;
+}
+
+.note{
+margin-top:20px;
+font-size:13px;
+color:#666;
+line-height:1.5;
+}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#777;
+}
+
+.footer a{
+color:#1a73e8;
+text-decoration:none;
+margin:0 6px;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+
+/* REVIEWS */
+
+.reviews-section{
+flex:1;
+}
+
+.review-title{
+text-align:center;
+font-size:20px;
+font-weight:bold;
+margin-bottom:25px;
+color:#444;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.review-card{
+background:#f1f3f6;
+padding:20px;
+border-radius:18px;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.05);
+transition:.3s;
+}
+
+.review-card:hover{
+transform:translateY(-5px);
+}
+
+.review-avatar{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:8px;
+}
+
+.review-name{
+font-weight:bold;
+font-size:14px;
+margin-bottom:3px;
+}
+
+.stars{
+color:#f4b400;
+font-size:16px;
+margin-bottom:6px;
+}
+
+.review-text{
+font-size:13px;
+color:#666;
+font-style:italic;
+}
+
+.review-footer{
+text-align:center;
+margin-top:25px;
+font-size:13px;
+color:#777;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:900px){
+
+.container{
+flex-direction:column;
+align-items:center;
+}
+
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.card{
+max-width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LEFT CARD -->
+
+<div class="card">
+
+<img src="/shiv.jpg" class="profile">
+
+<h1>Market Education Hub</h1>
+
+<div class="subtitle">
+Master <b>XAUUSD (Gold)</b> using market structure & rule-based trading
+</div>
+
+<div class="features">
+
+<p><span class="check">✔</span> Pure education for serious traders</p>
+<p><span class="check">✔</span> Decode Gold (XAUUSD) market structure clearly</p>
+<p><span class="check">✔</span> Learn <b>when NOT to trade</b></p>
+<p><span class="check">✔</span> Rule-based system (Beginner → Intermediate)</p>
+<p><span class="check">✔</span> Focused trader community — no hype</p>
+
+</div>
+
+<button class="btn" onclick="joinWhatsapp()">
+Continue to Private Whatsapp Classroom
+</button>
+
+<div class="note">
+Trading involves risk. This community focuses on learning only.<br>
+🔒 No spam • Leave anytime
+</div>
+
+<div class="footer">
+<a href="#">Terms</a> |
+<a href="#">Privacy</a> |
+<a href="#">Disclaimer</a>
+<br><br>
+Advertised by <b>Digital Ads Expert</b><br>
+Not affiliated with Meta Platforms, Inc.
+</div>
+
+</div>
+
+<!-- RIGHT REVIEWS -->
+
+<div class="reviews-section">
+
+<div class="review-title">
+⭐ Customer Reviews (4.8 ⭐)
+</div>
+
+<div class="review-grid">
+
+
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/76.jpg" class="review-avatar">
+<div class="review-name">Amit S.</div>
+<div class="stars">★★★★★</div>
+<div class="review-text">"Insightful tips and strong returns every month!"</div>
+</div>
+
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/79.jpg" class="review-avatar">
+<div class="review-name">Neha K.</div>
+<div class="stars">★★★★★</div>
+<div class="review-text">"Best platform for beginners. Easy and reliable."</div>
+</div>
+
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/54.jpg" class="review-avatar">
+<div class="review-name">Rahul M.</div>
+<div class="stars">★★★★★</div>
+<div class="review-text">"Accurate signals boosted my portfolio returns."</div>
+</div>
+
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/65.jpg" class="review-avatar">
+<div class="review-name">Pooja R.</div>
+<div class="stars">★★★★★</div>
+<div class="review-text">"Turned my stock trading into real profits!"</div>
+</div>
+
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/32.jpg" class="review-avatar">
+<div class="review-name">Vikram T.</div>
+<div class="stars">★★★★☆</div>
+<div class="review-text">"In-depth analysis and clear strategies."</div>
+</div>
+
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/44.jpg" class="review-avatar">
+<div class="review-name">Priya L.</div>
+<div class="stars">★★★★★</div>
+<div class="review-text">"Excellent support, team is always available."</div>
+</div>
+
+</div>
+
+<div class="review-footer">
+300+ Verified Client Reviews
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function joinWhatsapp(){
+window.location.href="https://wa.me/message/63RTZTGPL2P3N1";
+}
+
+</script>
+
+</body>
+</html>
